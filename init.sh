@@ -4,7 +4,11 @@
 
 # Install all the stuff
 sudo apt-get update
-sudo apt-get install curl vim git npm docker docker-compose neovim
+sudo apt-get install curl vim git npm docker docker-compose neovim snapd
+# certbot
+sudo snap install core; sudo snap refresh core
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+
 npm i -g yarn
 yarn global add pm2
 # nvm
